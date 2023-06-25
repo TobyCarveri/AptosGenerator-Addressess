@@ -1,3 +1,4 @@
+"""перед всем этим вам нужно установить pip install aptos-sdk"""
 import os
 import csv
 import pandas 
