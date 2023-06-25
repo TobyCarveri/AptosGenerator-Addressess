@@ -5,20 +5,9 @@ import pandas
 from aptos_sdk.account import Account
 from aptos_sdk.client import  RestClient
 
-
+# Подключение к мейн ноде
 NODE_URL = os.getenv("APTOS_NODE_URL", "https://rpc.ankr.com/http/aptos/v1")
 rest_client = RestClient(NODE_URL)
-
-import os
-import csv
-import pandas 
-from aptos_sdk.account import Account
-from aptos_sdk.client import  RestClient
-
-
-NODE_URL = os.getenv("APTOS_NODE_URL", "https://rpc.ankr.com/http/aptos/v1")
-rest_client = RestClient(NODE_URL)
-
 
 def gen_accounts(amount_wallets, prefix, name_file_csv: str, modes: str):
     wallets = []
