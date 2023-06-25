@@ -3,11 +3,7 @@ import os
 import csv
 import pandas 
 from aptos_sdk.account import Account
-from aptos_sdk.client import  RestClient
 
-# Подключение к мейн ноде
-NODE_URL = os.getenv("APTOS_NODE_URL", "https://rpc.ankr.com/http/aptos/v1")
-rest_client = RestClient(NODE_URL)
 
 def gen_accounts(amount_wallets, prefix, name_file_csv: str, modes: str):
     wallets = []
@@ -21,8 +17,8 @@ def gen_accounts(amount_wallets, prefix, name_file_csv: str, modes: str):
         i += 1
 
         'Просмотр классов'
-        print(type(acct.address()))
-        print(type(str(acct.address())))
+        # print(type(acct.address()))
+        # print(type(str(acct.address())))
 
     if len(wallets) != 0:
         with open(name_file_csv, mode=modes) as file:
