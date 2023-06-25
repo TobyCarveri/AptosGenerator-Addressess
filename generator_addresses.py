@@ -1,4 +1,4 @@
-"""перед всем этим вам нужно установить pip install aptos-sdk"""
+"""перед всем этим вам нужно установить pip install aptos-sdk в командной строке"""
 import os
 import csv
 import pandas 
