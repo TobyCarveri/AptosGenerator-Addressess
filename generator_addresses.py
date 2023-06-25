@@ -47,5 +47,5 @@ def gen_accounts(amount_wallets, prefix, name_file_csv: str, modes: str):
     else:
         print('No created')
 
-
-gen_accounts(1, '0x', './petweb/testwallets/shitwallets.csv', 'a')
+"""1) колво адрессов 2) Желаемые префиксы 3) путь по которому будет сохранена таблица (сама создаеться) 4) модификатор записи не трогать"""
+gen_accounts(1, '0x', './AptosFolder/testwallets/shitwalletsmake.csv', 'a')
